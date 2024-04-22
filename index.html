@@ -7,7 +7,7 @@
                 background-color: aqua
             }
             table{
-                background-color: yellow;
+                background-color: rgba(255, 255, 0, 0.455);
             }
             .texto-alineado-derecha{
                 text-align: right;
@@ -17,7 +17,7 @@
                 width: 50%;
                 text-align: center;
             }
-           h1{
+           h1,h2, .color-blanco{
             color:white;
            }
            .imagen-amlo-dimensiones {
@@ -36,6 +36,12 @@
            .alineado-vertical{
 
            }
+           .lista{
+            list-style-type: disc;         
+            padding-left: 20px; 
+            pa  dding-top: 0px;
+
+           }
         </style>
     </head>
     <body style="background-color: rgb(0, 225, 255);">
@@ -45,34 +51,38 @@
                     class="imagen-amlo-dimensiones logo"
                     alt="descripcion de la imagen">
             </div>
-            <div style="display: flex; height: 100px;">
+            <div style="display: grid; place-items: end; height: 100px;">
                 <div style=" width: 100%">
                     <h1 style="margin-bottom: 0px;" class="centrado"> Web Design
                     </h1>
-                    <h3 display="inline-block" style="margin-bottom: 0px;"
-                        class="centrado"> Studio </h3>
+                    <h2 display="inline-block" style="margin-bottom: 0px;"
+                        class="centrado"> STUDIO </h2>
                 </div>
             </div>
         </div>
-        <p class="centrado parrafo"> ¡Porque en el mundo de la informatica
+        <p class="centrado parrafo color-blanco"> ¡Porque en el mundo de la
+            informatica
             somos tu mejor aliado!</p>
         <h2> Descripción</h2>
-        <div> En Web Design Studio, comprendemos que tu página web es el
-            escaparate de tu negocio al mundo. Por eso, nos enfocamos en
-            brindarte un servicio personalizado y de alta calidad, para que
-            tu
-            sitio web refleje fielmente tu marca, valores y propuesta de
-            valor.
-            Nuestro equipo de expertos está conformado por apasionados del
-            diseño web, marketing digital y atención al cliente. Trabajamos
-            en
-            conjunto contigo para comprender tus necesidades y objetivos, y
-            así
-            crear una página web que no solo sea atractiva visualmente, sino
-            que
-            también sea funcional, fácil de usar y te ayude a alcanzar tus
-            metas
-            comerciales.
+        <div>
+            <p class="color-blanco">
+                En Web Design Studio, comprendemos que tu página web es el
+                escaparate de tu negocio al mundo. Por eso, nos enfocamos en
+                brindarte un servicio personalizado y de alta calidad, para que
+                tu
+                sitio web refleje fielmente tu marca, valores y propuesta de
+                valor.
+                Nuestro equipo de expertos está conformado por apasionados del
+                diseño web, marketing digital y atención al cliente. Trabajamos
+                en
+                conjunto contigo para comprender tus necesidades y objetivos, y
+                así
+                crear una página web que no solo sea atractiva visualmente, sino
+                que
+                también sea funcional, fácil de usar y te ayude a alcanzar tus
+                metas
+                comerciales.
+            </p>
         </div>
 
         <table border="2"
@@ -95,14 +105,30 @@
                     gestión de datos y la satisfacción de
                     nuestros clientes.</td>
                 <td>
-                    • Compromiso
-                    • Responsabilidad
-                    • Integridad
-                    • Adaptabilidad
+                    <ol class="lista">
+                        <li> Compromiso </li>
+                        <li>Responsabilidad </li>
+                        <li>Integridad </li>
+                        <li> Adaptabilidad </li>
+                    </ol>
                 </td>
             </tr>
         </table>
-        <h1> </h1>
-        <div class="texto-alineado-derecha centrado"> hola </div>
+        <br>
+        <div style=" display: flex;">
+            <div style="width: 40%; background-color: red;">
+                <img src="src/imgs/logo.jpeg"
+                    class="imagen-amlo-dimensiones logo"
+                    alt="descripcion de la imagen">
+            </div>
+            <div style="width: 60%; background-color: blue ;">
+                <div>
+                    <h1 style="margin-bottom: 0px;" class="centrado"> Web Design
+                    </h1>
+                    <h2 display="inline-block" style="margin-bottom: 0px;"
+                        class="centrado"> STUDIO </h2>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
